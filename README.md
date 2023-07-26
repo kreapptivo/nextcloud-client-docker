@@ -1,5 +1,5 @@
 # Nextcloud docker-client
-This image provides you an ARMv7 alpine based image for syncing your files with a remote [nextcloud server ](https://nextcloud.com/)
+This image provides you an **ARMv7** alpine based image for syncing your files with a remote [nextcloud server ](https://nextcloud.com/)
 
 This image is based on the work made by: [Martin Peters](https://github.com/FreakyBytes) and [Juan Ignacio Borda](https://github.com/juanitomint)
 
