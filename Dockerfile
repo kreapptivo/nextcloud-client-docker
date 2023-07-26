@@ -1,5 +1,5 @@
-FROM alpine:latest
-LABEL maintainer="juanignacioborda@gmail.com"
+FROM arm32v7/alpine:latest
+LABEL maintainer="wacker@kreapptivo.de"
 ARG VCS_REF
 ARG BUILD_DATE
 ARG buildno
@@ -26,6 +26,6 @@ ENV USER=$USER \
 RUN apk update && apk add nextcloud-client moreutils sudo && rm -rf /etc/apk/cache
 
 # add run script
-ADD run.sh /usr/bin/run.sh
+COPY run.sh /usr/bin/run.sh
 
 CMD /usr/bin/run.sh
